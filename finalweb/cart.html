@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | SwiftShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Swift<span>Shop</span></a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html" class="active cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h1>Your Shopping Cart</h1>
+            <div id="cart-items">
+                <!-- Cart items load here -->
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shipping">$5.99</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$5.99</span>
+                </div>
+                <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SwiftShop</h3>
+                    <p>Your one-stop shop for quality products</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>contact@swiftshop.com</p>
+                    <p>+1 (234) 567-8900</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 SwiftShop. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
